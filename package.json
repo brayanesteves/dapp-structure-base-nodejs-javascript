@@ -1,0 +1,29 @@
+{
+  "name": "dapp-structure-base-nodejs-javascript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ./contracts/js/compile.js",
+    "deploy": "node ./contracts/js/deploy.js",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brayanesteves/dapp-structure-base-nodejs-javascript.git"
+  },
+  "author": "Brayan Esteves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brayanesteves/dapp-structure-base-nodejs-javascript/issues"
+  },
+  "homepage": "https://github.com/brayanesteves/dapp-structure-base-nodejs-javascript#readme",
+  "dependencies": {
+    "solc": "^0.8.6",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

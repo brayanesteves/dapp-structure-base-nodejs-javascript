@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>DAPP Structure Base Nodejs JavaScript</title>
+</head>
+<body>
+    <button id="enableEthereumButton" class="btn btn-warning text-white d-none">Conectar Metamask</button>
+    <p id="accountSelected" class="text-end p-4"></p>
+
+    <div>
+        <h1 class="text-center mb-5">MyCoin</h1>
+
+        <br />
+
+        <p>Ver el balance de una cuenta:</p>
+
+        <div class="input-group mb-3">
+            <input type="text" id="addressGetBalance" class="form-control" placeholder="Introduce una address..." />
+            <button type="button" id="btnGetBalance" class="btn btn-success">Ver el balance</button>
+            <p class="col-12 text-center p-3 h6 bg-secondary text-white mt-3">Balance: <span id="balance"></span></p>
+        </div>
+
+        <br /><br /><br />
+
+        <p>Realizar una transacción a una cuenta:</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Address de destino:</span>
+            <input type="text" id="addressBenefiaira" class="form-control" placeholder="Introduce una 'address' de destino..." />
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Cantidad:</span>
+            <input type="number" id="cantidad" class="form-control" placeholder="Cantidad de 'BCOIN' que deseas transferir..." />
+        </div>
+        <button id="transferir" class="btn btn-success d-block" style="margin-left:auto;">TRANSFERIR</button>
+    </div>
+    
+    <script src="./libs/web3/js/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
